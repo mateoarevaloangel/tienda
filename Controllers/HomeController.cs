@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using tienda.Models;
+//using tienda.Controllers.EmpladosController1;
 
 namespace tienda.Controllers
 {
@@ -20,6 +21,7 @@ namespace tienda.Controllers
 
         public IActionResult Index()
         {
+            var Emplado = new EmpladosController1();
             return View();
         }
 
